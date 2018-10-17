@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/tabbar_template/sub/index",
+    "pages/tabbar_template/sub/message",
+    "pages/tabbar_template/sub/add",
+    "pages/tabbar_template/sub/collection",
+    "pages/tabbar_template/sub/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tabbar_template/sub/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar_template/sub/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/tabbar_template/sub/collection",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/tabbar_template/sub/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

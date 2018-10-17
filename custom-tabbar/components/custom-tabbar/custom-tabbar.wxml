@@ -1,0 +1,13 @@
+<view style='height:100rpx;'></view>
+<view>
+  <view class='tabbar-wrapper'>
+    <view wx:for="{{tabs}}" wx:key="{{item.content}}" class='tabbar-item' bindtap='clickTag' data-index='{{index}}'>      
+      <image src='{{(activeIndex==index)?item.activeImg:item.inactiveImg}}' wx:if="{{item.activeImg}}"></image>
+      <view wx:if="{{item.content}}" style="color:{{(activeIndex==index)?tabStyle.activeColor:tabStyle.inactiveColor}};">
+        {{item.content}}
+      </view> 
+    </view>
+    <!-- 下面这个是中间的大加号 -->
+    <image src='./icons/add_2x.png' class='plus-icon' bindtap='clickPlus'></image>
+  </view>
+</view>

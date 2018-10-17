@@ -1,0 +1,4 @@
+<!--pages/tabbar_template/sub/index.wxml-->
+<text>pages/tabbar_template/sub/index.wxml</text>
+首页
+<custom-tabbar active-index="0"></custom-tabbar>

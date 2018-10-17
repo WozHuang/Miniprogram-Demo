@@ -1,0 +1,4 @@
+<!--pages/tabbar_template/sub/collection.wxml-->
+<text>pages/tabbar_template/sub/collection.wxml</text>
+收藏页
+<custom-tabbar active-index="3"></custom-tabbar>

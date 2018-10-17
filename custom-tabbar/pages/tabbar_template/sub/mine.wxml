@@ -1,0 +1,4 @@
+<!--pages/tabbar_template/sub/mine.wxml-->
+<text>pages/tabbar_template/sub/mine.wxml</text>
+我的页
+<custom-tabbar active-index="4"></custom-tabbar>

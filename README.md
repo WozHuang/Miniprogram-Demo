@@ -1,2 +1,5 @@
 # Miniprogram-Demo
-微信小程序的一些demo
+
+记录小程序踩坑
+
+1. [自定义tabbar](custom-tabbar)
