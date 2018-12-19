@@ -1,0 +1,12 @@
+<!-- 使用 block 标签是因为它不会解析到文本中 -->
+<block wx:for="{{nodes}}" wx:key="{{index}}">
+  <block wx:if="{{item.type==='text'}}">
+    <span>{{item.value}}</span>
+  </block>
+  <block wx:elif="{{item.type==='emoji'}}">
+    <span class='emoji-gif' style='background-image:url({{imgHost}}{{item.value}});'></span>    
+  </block>
+  <block wx:else>
+    [未知消息类型:{{item.value}}]
+  </block>
+</block>

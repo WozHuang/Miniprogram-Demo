@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "emoji-text": "/components/emoji-parser/emoji-parser"
+  }
+}

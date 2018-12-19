@@ -1,0 +1,5 @@
+<emoji-picker emoji-list="{{emojiKeys}}" bindpick="bindEmojiPick"></emoji-picker>
+<!-- 注：emoji-list为可选参数，可以不传，会使用默认的表情列表 -->
+<view class='preview'>
+  所点击的表情：<emoji-text text="{{msg}}"></emoji-text>
+</view>

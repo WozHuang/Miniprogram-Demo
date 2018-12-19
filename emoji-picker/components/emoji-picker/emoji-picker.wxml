@@ -1,0 +1,13 @@
+<view class='swiper_background'>
+  <swiper indicator-dots="true" style='height:360rpx;'>
+    <block wx:for="{{emojiArray}}" wx:key="" wx:for-item="emojis">
+      <swiper-item>
+        <view class='emoji-wrapper'>
+          <view wx:for="{{emojis}}" wx:key="{{item}}" class='emoji-item' data-emoji="[{{item}}]" bindtap='clickEmoji'>
+            <emoji-text text="[{{item}}]"></emoji-text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
