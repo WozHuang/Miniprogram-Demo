@@ -1,0 +1,3 @@
+<view wx:for="{{emojiKeys}}" wx:key="{{index}}">
+  <emoji-text text="[{{item}}] {{'<==='}}"></emoji-text> [{{item}}]
+</view>

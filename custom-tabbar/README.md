@@ -24,7 +24,7 @@
 
 ### 效果图： ###
 
-![效果图](https://i.imgur.com/1rwaCIN.png)
+![效果图](sample.png)
 
 ### 实现原理 ###
 
