@@ -8,10 +8,29 @@ Component({
       value: 0,//默认当前选中第一项
     },
   },
-
+  
+  // 进入页面时需要隐藏掉原有的tabbar
+  // 有时ios下会有问题，于是写了两遍保险一点
+  // 见 https://developers.weixin.qq.com/community/develop/doc/000ea2e6db4e50f0c8763741756000?highline=wx.hideTabBar%20%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B0%83%E7%94%A8%E5%A4%B1%E8%B4%A5
   created() {
-    //进入页面时需要隐藏掉原有的tabbar
-    wx.hideTabBar({ aniamtion: false })
+    wx.hideTabBar({
+      aniamtion: false,
+      fail() {
+        setTimeout(function () {
+          wx.hideTabBar({ aniamtion: false })
+        }, 500)
+      }
+    })
+  },
+  ready() {
+    wx.hideTabBar({
+      aniamtion: false,
+      fail() {
+        setTimeout(function () {
+          wx.hideTabBar({ aniamtion: false })
+        }, 500)
+      }
+    })
   },
 
   data: config,

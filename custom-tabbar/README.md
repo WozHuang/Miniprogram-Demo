@@ -31,3 +31,7 @@
 1. 利用 `wx.hideTabBar({aniamtion: false})` 隐藏默认的tabbar
 
 2. 点击时使用 `wx.switchTab` 进行跳转
+
+### 2019-1-21更新 ###
+
+小程序有时ios下tabbar没有隐藏，为了保险起见在组件的生命周期内调用了多次 `wx.hideTabBar`
