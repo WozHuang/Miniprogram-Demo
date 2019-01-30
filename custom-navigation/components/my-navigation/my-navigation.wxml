@@ -1,0 +1,16 @@
+<!--component/navigation/navigation.wxml-->
+<!-- 
+  这个组件使用了custom-navigation组件并传入slot中的内容，
+  如果一个小程序中会有多个不同样式的导航栏或者说导航栏特殊需求时这样写更利于维护
+  （比如点击导航栏弹个搜索框出来这中，就看老板想象力了）
+ -->
+<custom-navigation>
+  <view class='navigation-warpper'>
+    <view class='capsule'>
+      <image src='./assets/left.png' class='icon' bindtap='handleBack'></image>
+      <view class='separator'></view>
+      <image src='./assets/home.png' class='icon' bindtap='handleHome'></image>
+    </view>
+    <view class='hot' bindtap='handleHot'>今日热搜：你好呀</view>
+  </view>
+</custom-navigation>

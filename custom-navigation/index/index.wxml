@@ -1,0 +1,12 @@
+<my-navigation/>
+<view class='testBlock' style='position:absolute;top:100px;left:50rpx;right:50rpx;'>这是一个z-index很大的块，可能会覆盖在导航栏上，小心使用</view>
+
+<view style='background:#ddd;'>
+  <view wx:for="12345" wx:key="{{index}}">我是主体内容</view>
+  
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback" controls style='width:100%;'></video>
+  <view class='testBlock'>原生组件也有可能会覆盖在导航栏之上，也要小心使用</view>
+
+  <view wx:for="123456789" wx:key="{{index}}">我是主体内容</view>
+  <view wx:for="123456789" wx:key="{{index}}">我是主体内容</view>
+</view>

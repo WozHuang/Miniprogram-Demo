@@ -1,0 +1,11 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
+.testBlock{
+  padding: 25rpx;
+  background:purple;
+  z-index:99999;
+  color: #fff;
+}

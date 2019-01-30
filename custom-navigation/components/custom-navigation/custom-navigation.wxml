@@ -1,0 +1,8 @@
+<!--component/custom-navigation/custom-navigation.wxml-->
+
+<!-- 上面这个是作为占位的元素存在，高度是状态栏高度 + 44（这个值是测试得到的） -->
+<view class='placeholder' style='height:{{statusBarHeight + 44}}px;'></view>
+<view class='custom-navigator' style='height:44px;padding-top:{{statusBarHeight}}px;'>
+  <!-- 子节点插入到这里 -->
+  <slot></slot>
+</view>

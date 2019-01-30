@@ -1,0 +1,28 @@
+/* component/navigation/navigation.wxss */
+.navigation-warpper{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.navigation-warpper .capsule{
+  height:30px;
+  margin:0 8px;
+  padding:0 8px;
+  display: flex;
+  align-items: center;
+  border:1px solid #eee;
+  border-radius:8px;
+  position:absolute;bottom:4px;left:0;
+}
+.navigation-warpper .capsule .icon{
+  width:20px;height:20px;
+}
+.navigation-warpper .capsule .separator{
+  width:1px;height:18px;background:#eee;display:inline-block;margin:0 8px;
+}
+.navigation-warpper .title{
+  margin: 0 auto;line-height:44px;text-align:center;color:#000;font-size:13px;
+}
+.navigation-warpper .hot{
+  margin: 0 auto;line-height:44px;text-align:center;color:#999;font-size:13px;
+}

@@ -1,0 +1,11 @@
+/* component/custom-navigation/custom-navigation.wxss */
+.placeholder,.custom-navigator{
+  height: 44px;
+  background: #fff;
+}
+.custom-navigator{
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
