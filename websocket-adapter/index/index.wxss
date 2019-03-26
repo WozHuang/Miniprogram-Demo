@@ -1,0 +1,7 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+view{
+  margin-bottom: 20rpx;
+}

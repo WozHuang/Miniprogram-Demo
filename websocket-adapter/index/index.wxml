@@ -1,0 +1,6 @@
+<view class="intro">简单的websocket适配层</view>
+<view>打开根目录下的test.html可以测试web中的效果，实际开发时可能会有token的需求，需要调整代码</view>
+<view>消息列表：</view>
+<view wx:for="{{messageList}}">
+    <rich-text nodes="{{item}}"></rich-text>
+</view>

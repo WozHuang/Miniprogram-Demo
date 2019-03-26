@@ -8,5 +8,6 @@
 
 3. [表情选择器](emoji-picker)
 
-3. [自定义导航栏](custom-navigation)
+4. [自定义导航栏](custom-navigation)
 
+5. [WebSocket适配层](websocket-adapter)
