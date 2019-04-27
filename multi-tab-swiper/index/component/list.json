@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "data-item": "./item",
+    "load-status": "../../component/load-status/load-status"
+  }
+}

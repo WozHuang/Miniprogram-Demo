@@ -1,0 +1,29 @@
+/* pages/shop/components/categoryBar.wxss */
+.category-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.category-item {
+  display: inline-block;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333333;
+  position: relative;
+}
+.category-item.current{
+  color: #FF6933;
+}
+.category-item.current::after{
+  content: '';
+  display: block;
+  width: 58rpx;
+  height: 4rpx;
+  background: #FF6933;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}

@@ -11,3 +11,5 @@
 4. [自定义导航栏](custom-navigation)
 
 5. [WebSocket适配层](websocket-adapter)
+
+6. [左右滑动切换的多tab页面](multi-tab-swiper)

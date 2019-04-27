@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "category-bar": "../component/category-bar/category-bar",
+    "load-more": "../component/load-more/index",
+    "data-list": "./component/list"
+  }
+}

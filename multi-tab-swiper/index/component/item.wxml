@@ -1,0 +1,5 @@
+<!-- index/component/item.wxml -->
+<view class="wrap">
+  <image class="avatar" mode="aspectFill" src="avatar.jpg"></image>
+  <span>{{myData.content}}</span>
+</view>

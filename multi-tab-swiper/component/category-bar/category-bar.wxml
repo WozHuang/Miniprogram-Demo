@@ -1,0 +1,15 @@
+<!-- 顶部tab -->
+<block wx:if="{{scroll}}">
+  <scroll-view scroll-x="{{true}}" style="white-space:nowrap;" scroll-into-view="category{{(current-2) > 0 ? (current-2) : 0}}" scroll-with-animation="{{true}}">
+    <view class="category-item {{index===current?'current':''}}" id="category{{index}}" style="padding:20rpx 15rpx;" wx:for="{{tabs}}" bind:tap="handleTap" wx:key="id" data-index="{{index}}">
+      {{item[key]}}
+    </view>
+  </scroll-view>
+</block>
+<block wx:else>
+  <view class="category-wrap">
+    <view class="category-item {{index===current?'current':''}}" wx:for="{{tabs}}" bind:tap="handleTap" wx:key="id" data-index="{{index}}">
+      {{item[key]}}
+    </view>
+  </view>
+</block>

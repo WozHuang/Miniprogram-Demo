@@ -1,0 +1,20 @@
+<block wx:if="{{categoryList}}">
+  <view class="container">
+    <view class="category-bar__wrap">
+      <!-- 如果选项很多屏幕宽度不够，scroll设置为true滚动显示，否则scroll设置为false时使用flex布局均匀分布 -->
+      <category-bar tabs="{{categoryList}}" scroll="{{true}}" current="{{current}}" key="name" bind:change="handleCategoryChange"></category-bar>
+    </view>
+    <view class="swiper__wrap">
+      <swiper indicator-dots="{{false}}" autoplay="{{false}}" duration="{{200}}" current="{{current}}" style="height:100%;" bindchange="handleCategoryChange">
+        <block wx:for="{{categoryList}}" wx:key="id">
+          <swiper-item>
+            <data-list cat-name="{{item.name}}" loaded="{{item.loaded}}"></data-list>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <load-more tip="加载分类中" loading="{{ true }}"></load-more>
+</block>

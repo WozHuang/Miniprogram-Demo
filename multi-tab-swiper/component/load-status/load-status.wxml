@@ -1,0 +1,11 @@
+<view wx:if="{{length}}">
+  <load-more tip="加载更多" loading="{{ true }}" wx:if="{{hasNextPage}}"></load-more>
+  <load-more tip="我是有底线的" loading="{{ false }}" wx:else></load-more>
+</view>
+<view wx:elif="{{hasNextPage}}" class="">
+  <load-more tip="加载中" loading="{{ true }}"></load-more>
+</view>
+<view class="nothing" wx:else>
+  <image mode="widthFix" src='./404.jpg' />
+  <view>暂无数据</view>
+</view>

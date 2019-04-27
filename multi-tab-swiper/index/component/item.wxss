@@ -1,0 +1,12 @@
+/* index/component/item.wxss */
+.wrap {
+  padding: 20rpx;
+  line-height: 100rpx;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}

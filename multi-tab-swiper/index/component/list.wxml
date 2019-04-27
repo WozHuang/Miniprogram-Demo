@@ -1,0 +1,8 @@
+<!--index/component/list.wxml-->
+
+<scroll-view scroll-y="{{true}}" class="list-wrap" bindscrolltolower="onReachBottom">
+  <view class="shop-item" wx:for="{{dataList}}" wx:key="id">
+    <data-item myData="{{item}}"></data-item>
+  </view>
+  <load-status length="{{dataList.length}}" has-next-page="{{hasNextPage}}"></load-status>
+</scroll-view>

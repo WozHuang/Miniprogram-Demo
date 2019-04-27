@@ -1,0 +1,8 @@
+/* index/component/list.wxss */
+.list-wrap{
+  height: 100%;
+}
+.shop-item{
+  background: #fff;
+  margin-top: 20rpx;
+}

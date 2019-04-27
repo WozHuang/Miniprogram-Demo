@@ -1,0 +1,22 @@
+page {
+  background: #f2f2f2;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-bar__wrap {
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+
+.swiper__wrap {
+  /* background: rebeccapurple; */
+  height: 0;
+  /* 充满剩余空间 */
+  flex-grow: 1;
+}
